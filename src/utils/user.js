@@ -41,7 +41,7 @@ const getUser = (id) =>{
 const getUsersInRoom = (room)=>{
     room = room.trim().toLowerCase()
     return users.filter((user)=>{
-        return user.room===room
+        return user.room.trim().toLowerCase()===room
     })
 }
 
